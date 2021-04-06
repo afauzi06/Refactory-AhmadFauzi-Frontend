@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html>
+<head>
+     <title>Latihan Index</title>
+</head>
+<body>
+    <script>
+        const list_letters_first = "abcdefgi";
+        const list_letters_second = "XZ";
+        const missingCharacter = list_letters_first => {
+        // to make the function more consistent
+        const s = list_letters_first.toLowerCase();
+        for(let i = 97; ; i++){
+            if(s.includes(String.fromCharCode(i))){
+                continue;
+            };
+            return String.fromCharCode(i);
+        };
+        return false;
+        };
+        document.write(" <h4> Letter awal : \n\n");
+        document.write(list_letters_first);
+        
+        document.write(" </h4>  list_letters_first : \n\n");
+        document.write(missingCharacter(list_letters_first));
+
+        const missingCharacter2 = list_letters_second => {
+    // to make the function more consistent
+    const u = list_letters_second.toLowerCase();
+    for(let i = 89; ; i++){
+        if(u.includes(String.fromCharCode(i))){
+            continue;
+        };
+        return String.fromCharCode(i);
+    };
+    return false;
+    };
+    document.write(" <h4> Letter awal : \n\n");
+    document.write(list_letters_second);
+    
+    document.write(" </h4>  list_letters_second : \n\n");
+    document.write(missingCharacter2(list_letters_second));
+</script>
+
+
+</body>
+</html>

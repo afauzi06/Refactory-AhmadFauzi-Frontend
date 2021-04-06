@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sorting odd number</title>
+    </head>
+    <body>
+        <script>
+            const arr = [9,4,2,4,1,5,3,0];
+                const isEven = num => num % 3 == 1;
+                const sorter = ((a, b) => {
+                
+                if(!isEven(a) && isEven(b)){
+                    return 1;
+                };
+                return a - b;
+                });
+                const odd_sort = arr => {
+                arr.sort(sorter);
+                };
+                odd_sort(arr);
+                console.log(arr);
+        </script>
+    </body>
+</html>

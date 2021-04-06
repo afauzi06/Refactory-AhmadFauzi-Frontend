@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Count Each of These Words</title>
+        
+
+    </head>
+    <body>
+        
+        <script>
+            const lyrics=`Aku ingin begini
+Aku ingin begitu
+Ingin ini itu banyak sekali
+Semua semua semua
+Dapat dikabulkan
+Dapat dikabulkan
+Dengan kantong ajaib
+Aku ingin terbang bebas
+Di angkasa
+Hei… baling baling bambu
+La... la... la...
+Aku sayang sekali
+Doraemon
+La... la... la...`;
+
+document.write(lyrics)
+document.write("<br>")
+document.write("<br>")
+
+
+document.write("Jumlah Kata [Aku, ingin dan dapat] dari lirik diatas adalah :")
+document.write("<br>")
+document.write("<br>")
+
+document.write('aku : ' + lyrics.match(/aku/gi).length)
+document.write("<br>")
+document.write('ingin : ' + lyrics.match(/ingin/gi).length)
+document.write("<br>")
+document.write('dapat : ' + lyrics.match(/dapat/gi).length)
+        </script>
+    </body>
+</html>

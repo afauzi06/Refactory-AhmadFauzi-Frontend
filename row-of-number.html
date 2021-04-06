@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Row of Number</title>
+            <script>//even
+                function even(){
+                    for(var a = 1; a <=1000; a++){
+                        if(a%2 == 0){
+                            document.write(a + "<br>");
+                        }
+                    }
+                }
+        </script>
+        <script>
+            function odd(){
+                    for(var a = 1; a <=1000; a++){
+                        if(a%2 != 0){
+                            document.write(a + "<br>");
+                        }
+                    }
+                }
+        </script>
+        <script>
+            function multi5(){
+                    for(var a = 0; a <=1000; a++){
+                        if(a%5 == 0){
+                            document.write(a + "<br>");
+                        }
+                    }
+                }
+        </script>
+        <script>
+            function Prime() {
+                var num= 1000;
+
+                for (let i = 2; i <= num; i++) {
+                    flag = true;
+                    
+                for (let j=2; j<=i-1; j++){
+                    if (i% j == 0){
+                        flag = false;
+                        break;
+                    }                  
+                }
+                if(flag){
+                    document.write(i+ "<br>");
+                }
+            }
+
+            }
+        </script>
+        <script>
+            function Prime2() {
+                var num= 100;
+
+                for (let i = 2; i <= num; i++) {
+                    flag = true;
+                    
+                for (let j=2; j<=i-1; j++){
+                    if (i% j == 0){
+                        flag = false;
+                        break;
+                    }                  
+                }
+                if(flag){
+                    document.write(i+ "<br>");
+                }
+            }
+
+            }
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>Row Of Number</h1>
+        <button onclick="even()">Even</button>
+        <button onclick="odd()">Odd</button>
+        <button onclick="Prime()">Prime</button>
+        <button onclick="Prime2()">Prime2</button>
+        <button onclick="multi5()">Multiplies 5</button>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cencoring Word</title>
+    </head>
+    <body>
+        <textarea id="review" cols="80" rows="10"></textarea>
+        <input type="button" id="cek" value="CEK">
+    
+        <script>
+            function cekKata(){
+                const textarea = document.getElementById('review');
+                let kata = /dolor| elit| quis| nisi| fugiat| proident| laborum/gi ;
+                let review1 = textarea.value;
+                let review2 = review1.replace(kata,'*****');
+                document.getElementById('review').value = review2;
+            }
+            document.getElementById('cek').addEventListener('click', cekKata);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetch data JSON</title>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+
+            var staticUrl = 'https://jsonplaceholder.typicode.com/users'
+
+            $.getJSON(staticUrl, function(data){
+                console.log(" ")
+                for (i = 0; i<data.length; i=i+1){
+                console.log(data)
+                }
+            });
+        });
+
+        </script>
+    </body>
+</html>
